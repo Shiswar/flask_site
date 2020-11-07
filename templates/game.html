@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="col-lg-10 offset-lg-1">
+
+    <div class="row container-fluid mt-3 mx-auto" id="posts">
+        <h1>FEATURED</h1>
+
+        <div class="row container-fluid post border-top border-bottom border-dark rounded my-2">
+            <div class="col-lg-6"> 
+                <img id="warzone-pic"class="rounded flex-auto p-1" src= "{{ url_for('static', filename='warzone_thumb.jpg') }}" >
+            </div> 
+
+            <div class="col-lg-6 review">
+                <h2>
+                    Call of Duty: Modern Warfare
+                </h2>
+                <p>
+                    Jump in to a thrilling battle to the death, choose your loadout wisely as you will be challenged in every way...
+                </p>
+                <p>
+                    Continue reading
+                </p>
+            </div>
+             
+        </div>
+
+        
+
+        <div class="row mt-4">
+            <h1>RECENT REVIEWS</h1>
+        </div>
+        <div class="row container-fluid mt-1 border-top border-dark mb-3">
+            
+            {% for post in posts %}
+
+            <div class="card col-lg-3">
+                <img src="{{ post.picture }}" class="card-img-top rounded flex-auto p-1" alt="...">
+                <div class="card-body py-0">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p><small>{{ post.category }}</small></p>
+                <p class="card-text">{{ post.review }}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            
+            {% endfor %}
+        
+        </div>
+        <div class="row">
+            
+
+        <div class="row container-fluid border border-dark rounded m-0">   
+                <div class="col-lg-7">
+                    <h1>Game of the week</h1>
+                    <p class="post-review" >This is the game of the week panels</p>
+                </div>
+                <div class="col-lg-3">
+                    <img id="warzone-pic"class="rounded flex-auto p-4" src= "{{ url_for('static', filename='warzone_thumb.jpg') }}" >
+                </div>
+            
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock content %}
