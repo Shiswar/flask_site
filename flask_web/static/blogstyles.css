@@ -1,0 +1,114 @@
+
+
+#explorer {
+    background-color: #ceffe3;
+    height:100%;
+}
+
+
+#header{
+    width:100%;
+    padding-left:40px;
+}
+
+h1{
+    font-family: 'Assistant', sans-serif;
+    font-weight:700;
+    font-size: 30px;
+    color: rgb(125, 167, 62);
+    float:left;
+}
+
+.review h2{
+    font-family: 'Assistant', sans-serif;
+    font-weight:600;
+    font-size: 30px;
+}
+
+.post {
+    margin:auto;
+    text-align: center;
+}
+
+
+
+
+
+.post-review{
+    font-family: 'Assistant', sans-serif; 
+}
+
+.cat{
+    font-size: 10px;
+}
+.date{
+    font-size: 10px;
+}
+.author{
+    font-size: 10px;
+}
+
+
+
+#nav-title{
+    color:#FFF;
+    font-family: 'Carter One', cursive;
+    font-size:30px;
+    margin-right:15px;
+}
+
+#logo{
+    height:30px;
+}
+
+.nav-link{
+    color:#FFF;
+    font-family: 'Carter One', cursive;
+    font-size:17px;
+    margin:10px;
+}
+
+.form-control{
+    vertical-align: middle;
+    float:right;
+}
+
+
+
+#spacer{
+    height:10%;
+}
+
+#posts{
+    float: none;
+    margin: 0 auto;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    
+  }
+  
+.sidebar-list li{
+    margin-top:30px;
+    list-style-type: none;
+    padding-left:0;
+    font-family:'Cabin', sans-serif, bold;
+
+}
+
+.sidebar-list li span{
+    color:greenyellow;
+    text-align: center;
+}
+
+.sidebar-list li a{
+    font-size:15px;
+    text-align:center;
+    display:inline-block;
+    color:white;
+}
+#warzone-pic{
+    width:100%;
+}
+

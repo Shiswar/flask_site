@@ -1,0 +1,237 @@
+
+body{
+  background-color:rgb(85, 85, 85) ;
+}
+
+#home-pic-section{
+  vertical-align: middle;
+  background-color: rgb(54, 54, 54);
+  height:100%;
+  overflow-y: hidden;
+  float:right;
+}
+
+.main-text{
+  padding-bottom:40%;
+  text-align: center;
+  padding :10%;
+  color:rgb(175, 235, 175);
+  font-family: 'Tomorrow', sans-serif;
+
+}
+
+#home-content{
+  
+}
+
+#contact-text{
+  padding-bottom:40%;
+  text-align: center;
+  padding :10%;
+  color:rgb(175, 235, 175);
+  font-family: 'Tomorrow', sans-serif;
+}
+
+#home-pic{
+  width:80%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+}
+
+#pic-space{
+  height:160px;
+  width: 100%;
+  text-align: center;
+  margin-top:80px;
+  
+}
+
+
+#home-text{
+  padding-bottom:40%;
+  text-align: center;
+  padding :10%;
+  color:rgb(175, 235, 175);
+  font-family: 'Tomorrow', sans-serif;
+  
+}
+
+#head-section{
+  height:160px;
+  background-color:rgb(175, 235, 175);
+  font-family: 'Cairo', sans-serif;
+  font-size:100px;
+  
+  margin:auto;
+
+}
+
+
+
+.icon{
+  margin:20px;
+  color: white;
+}
+
+
+#title{
+  text-align: center;
+}
+
+.container-fluid{
+  text-align: center;
+}
+
+
+.navbar{
+  text-align: center;
+  list-style: none;
+  margin:0 auto;
+  padding:20px;
+  display:block !important;
+  margin-left:auto;
+  margin-right: auto;
+  background-color: rgb(54, 54, 54);
+  
+  
+
+}
+
+.navbar li{
+  display:inline;
+  padding:20px;
+
+}
+
+.navbar li:hover{
+  background-color: rgb(117, 117, 117);
+  
+}
+
+.navbar a{
+  display: inline-block;
+  margin:auto;
+  text-decoration:none;
+  font-family: 'Tomorrow', sans-serif;
+  
+  color:rgb(175, 235, 175);
+
+}
+
+#nav-div{
+  margin:auto;
+}
+
+
+
+.cv-content{
+
+}
+
+
+#cv-buttons{
+  
+  height:100%;
+  
+  
+
+
+}
+
+#cv-text{
+  
+  text-align: center;
+  padding-top:8%;
+  color:rgb(175, 235, 175);
+  font-family: 'Tomorrow', sans-serif;
+  font-size: large;
+
+}
+
+.accordion {
+  width:100%;
+  color: rgb(175, 235, 175);
+  height: 10%;
+  background-color: rgb(54, 54, 54);
+  font-family: 'Tomorrow', sans-serif ;
+  margin-top: 20px;
+  border-style: none;
+  outline:none;
+}
+.accordion:hover{
+  background-color: rgb(117, 117, 117);
+  outline:none;
+}
+
+.accordion.active{
+  border-style: solid !important; 
+  border-color: rgb(175, 235, 175) !important;
+  border-width: 2px;
+  outline:none;
+}
+
+.section-text{
+  display:none;
+  height:100%;
+  font-family: 'Tomorrow', sans-serif ;
+  color: rgb(175, 235, 175);
+}
+
+hr{
+  border-top:solid rgb(175, 235, 175);
+  size:3px;
+  margin-top:30px;
+  margin-bottom:30px;
+  margin-left:200px;
+  margin-right: 300px;
+}
+
+#cv1{
+  width:100%;
+  padding:20px;
+}
+
+#summary{
+  width:100%;
+  color: rgb(175, 235, 175);
+  height: 10%;
+  background-color: rgb(54, 54, 54);
+  font-family: 'Tomorrow', sans-serif ;
+  margin-top: 20px;
+  
+  outline:none;
+  border-color:rgb(175, 235, 175);
+  border-width:2px;
+  
+  padding:15px;
+}
+#summary:hover{
+  border-color:rgb(175, 235, 175);
+  border-width:2px;
+  background-color: rgb(117, 117, 117);
+  outline:none;
+}
+
+#summary.active{
+  outline:none;
+}
+
+#metrics{
+  color:rgb(175, 235, 175);
+  display:none;
+  font-family: 'Tomorrow', sans-serif ;
+
+}
+
+#arrow{
+  font-size: 120px; 
+} 
+
+ul li{
+  text-align: left;
+}
