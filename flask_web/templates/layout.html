@@ -6,8 +6,11 @@
         
 
          <!-- Bootstrap -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
         
@@ -30,20 +33,20 @@
                     <img src="{{ url_for('static', filename='cat-logo.png') }}" id="logo">
                     <a id="nav-title">dick blog</a>
                     <div class="collapse navbar-collapse">
-                        <ul class= "navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('game') }}">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('login') }}">Log in</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('register') }}">Sign up</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </nav>
+                        <div class="navbar-nav mr-auto">
+                            <a class="nav-item nav-link" href="{{ url_for('game') }}">Home</a>
+                            
+                        </div>
+                        <div class="navbar-nav">
+                            {% if current_user.is_authenticated %}
+                            <a class="nav-item nav-link" href="{{ url_for('new_post') }}">New Post</a>
+                            <a class="nav-item nav-link" href="{{ url_for('logout') }}">Log out</a>
+                            <a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a>
+                            {% else %}
+                            <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
+                            <a class="nav-item nav-link" href="{{ url_for('register') }}">Sign up</a>
+                            {% endif %}
+                        </div>
             </header>
         </div>
         
