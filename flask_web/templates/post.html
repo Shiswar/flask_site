@@ -6,7 +6,7 @@
     <div class="col-lg-5">
         <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}">
         <div class="card-body py-0">
-            <a class="text-muted">{{ post.author.username }}</a>
+            <a class="text-muted" href="{{ url_for('user_posts', username=post.author.username) }}">{{ post.author.username }}</a>
             <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
             {% if post.author == current_user %}
             <div>

@@ -3,31 +3,12 @@
 <div class="col-lg-8 offset-lg-2">
 
     <div class="row container-fluid mt-3 mx-auto" id="posts">
-        <h1>FEATURED</h1>
-
-        <div class="row container-fluid post border-top border-bottom border-dark rounded my-2">
-            <div class="col-lg-5"> 
-                <img id="warzone-pic"class="rounded flex-auto p-1" src= "{{ url_for('static', filename='warzone_thumb.jpg') }}" >
-            </div> 
-
-            <div class="col-lg-6 review">
-                <h2>
-                    Call of Duty: Modern Warfare
-                </h2>
-                <p>
-                    Jump in to a thrilling battle to the death, choose your loadout wisely as you will be challenged in every way...
-                </p>
-                <p>
-                    Continue reading
-                </p>
-            </div>
-             
-        </div>
+        
 
         
 
         <div class="row mt-4">
-            <h1>RECENT REVIEWS</h1>
+            <h1>Posts by {{ user.username }} ({{ posts.total }})</h1>
         </div>
         <div class="row container-fluid mt-1 border-top border-dark mb-3">
             
@@ -53,7 +34,7 @@
     {% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
         {% if page_num %}
             {% if posts.page == page_num %}
-                <a class="btn btn-info mb-4" href="{{ url_for('game', page=page_num) }}">{{ page_num }}</a>
+                <a class="btn btn-info mb-4" href="{{ url_for('user_posts', username=user.username, page=page_num) }}">{{ page_num }}</a>
             {% else %}
                 <a class="btn btn-outline-info mb-4" href="{{ url_for('game', page=page_num) }}">{{ page_num }}</a>
             {% endif %}
@@ -65,3 +46,4 @@
 </div>
 
 {% endblock content %}
+
